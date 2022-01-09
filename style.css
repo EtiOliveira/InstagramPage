@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(250, 250, 250);
+
+    
+}
+main{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+#celular img {
+    position: relative;
+    height: 40rem;  
+    z-index: 1; 
+}
+#celular{
+    position: relative;
+}
+#celular::before{
+    content: '';
+    background-image: url(img/celular2.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;  
+    top: -15px;  
+    right:40px;
+    
+    
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    border: 1px solid lightgray;
+    
+}
+
+
+#container img, p, button, .circulo{
+    margin: 15px;
+}
+.circulo{
+    height: 6rem;   
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+button{
+padding: 5px 25px;
+background-color: #0095f6;
+border-radius: .3rem;
+font: 15px arial bold ;
+border: none;
+}
+button a{
+    color: white;
+}
+
+.foot{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+.foot a{
+    font-size:13px;
+    margin: .3rem ;
+    color:#8E8E8E ;
+}
+#thirdline{
+    margin-top: 15px;
+}
+@media (max-width: 1024) {
+    main{
+        width: 90%;
+    }
+}
+
+@media (max-width:650px){
+    #celular{
+        display: none;
+    }
+}
+
+
